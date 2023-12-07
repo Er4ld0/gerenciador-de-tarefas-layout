@@ -127,7 +127,7 @@ body {
 
 .task__title{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     gap: 10px;
 }
@@ -153,7 +153,7 @@ body {
 
 .task__hours > p{
     background-color: var(--vista_blue);
-    width: 40px;
+    width: 100%;
     height: 15px;
     text-align: center;
     display: flex;
@@ -236,7 +236,6 @@ main {
     justify-content: center;
     width: 100%;
     height: 50px;
-    gap: 30px;
     border-radius: 10px;
     border-bottom-style: solid;
     border-color: var(--jet);
@@ -247,7 +246,8 @@ main {
 }
 
 .task__item__title {
-    font-size: 20px;
+    width: 100px;
+    font-size: 15px;
     font-weight: 700;
     display: flex;
     align-items: center;
