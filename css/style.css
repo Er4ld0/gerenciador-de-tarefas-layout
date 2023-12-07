@@ -12,6 +12,7 @@
     --madder: #B10F2E;
     --burnt_sienna: #DE7C5A;
     --vista_blue: #7699D4;
+    --vista_blue_active: #99afd4;
 }
 
 html,
@@ -66,9 +67,8 @@ body {
 }
 
 .profile__header {
+    background-color: var(--vista_blue);
     border-radius: 15px;
-    border-style: solid;
-    border-color: var(--jet);
     display: flex;
     align-items: center;
 }
@@ -85,34 +85,96 @@ body {
 .profile__info {
     margin: 0 10px 10px 10px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.info__btn{
+    color: var(--white);
+    font-weight: 500;
+    background-color: var(--vista_blue);
+    border-style: none;
+    border-radius: 5px;
+    width: 175px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__btn:hover{
+    cursor: pointer;
+    background-color: var(--vista_blue_active);
+}
+
+.profile__info > h1{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__last__tasks{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-align: left;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.task__title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task__hours{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task__title > h1, .task__hours > h1{
+    font-size: 17px;
+}
+
+.task__title > p, .task__hours > p{
+    font-size: 10px;
+}
+
+.task__title > p{
+    height: 15px;
+}
+
+.task__hours > p{
+    background-color: var(--vista_blue);
+    width: 40px;
+    height: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.last__task__row > p:last-child{
+    background-color: var(--vista_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 15px;
+    border-radius: 5px;
 }
 
 .profile__name {
     font-size: 20px;
     font-weight: 600;
-}
-
-.profile__email,
-.profile__birth {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.profile__email>h1,
-.profile__birth>h1,
-.profile__gender>h1,
-.profile__phone>h1 {
-    font-size: 17px;
-}
-
-.profile__email>p,
-.profile__birth>p,
-.profile__gender>p,
-.profile__phone>p {
-    font-size: 13px;
 }
 
 /*==========Task Configs==========*/
