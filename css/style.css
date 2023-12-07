@@ -54,9 +54,9 @@ body {
 
 .card__profile {
     color: var(--white);
-    background-color: var(--madder);
+    background-color: var(--jet);
     border-style: double;
-    border-color: var(--madder);
+    border-color: var(--vista_blue);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -207,7 +207,7 @@ main {
 }
 
 .card__tasks {
-    background-color: var(--white);
+    background-color: var(--jet);
 
     width: 200px;
     height: fit-content;
@@ -230,15 +230,14 @@ main {
 }
 
 .task__item__header {
-    background-color: var(--madder);
+    background-color: var(--vista_blue);
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     width: 100%;
     height: 50px;
     border-radius: 10px;
-    border-bottom-style: solid;
-    border-color: var(--jet);
 }
 
 .task__icon__edit {
@@ -284,14 +283,14 @@ input:last-child{
     width: 160px;
 }
 
-.task__icon__arrow {
+.task__icon__edit, .task__icon__arrow {
     width: 13px;
     display: flex;
     align-items: flex-end;
     justify-content: right;
 }
 
-.task__icon__arrow:hover {
+.task__icon__arrow:hover, .task__icon__edit {
     cursor: pointer;
 }
 
