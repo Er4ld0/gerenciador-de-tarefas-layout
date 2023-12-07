@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container2">
+            <aside>
+                <div class="card__profile">
+                    <div class="profile__header">
+                        <img src="img/image-jeremy.png" alt="profile Photo" class="profile__img">
+                        <h1 class="profile__name">Jeremias Cristo</h1>
+                    </div>
+                    <div class="profile__info">
+                        <div class="profile__email">
+                            <h1>Email:</h1>
+                            <p>jeremias_cristo@yahoo.com</p>
+                        </div>
+                        <div class="profile__birth">
+                            <h1>Birth:</h1>
+                            <p>04/10/1998</p>
+                        </div>
+                        <div class="profile__gender">
+                            <h1>Gender:</h1>
+                            <p>Male</p>
+                        </div>
+                        <div class="profile__phone">
+                            <h1>Phone:</h1>
+                            <p>(82) 92784-2865</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <div class="task__row1">
+                    <div class="card__tasks">
+                        <div class="task__items">
+                            <div class="task__item__header">
+                                <img src="img/edit-icon.png" alt="" class="task__icon__edit">
+                                <h1 class="task__item__title">Task 1</h1>
+                                <img src="img/icon-arrow-down.png" alt="" class="task__icon__arrow" id="arrow1"
+                                    onclick="showDesc1()">
+                            </div>
+                            <div class="task__desc" id="task__desc_1">
+                                <div class="date_time">
+                                    <input type="date" name="" id="">
+                                    <input type="time" name="" id="">
+                                </div>
+                                <br>
+                                <textarea class="task__item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ex earum maxime doloremque nesciunt exercitationem consectetur fuga esse natus sed labore, sequi est explicabo illo, deleniti ratione!</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__tasks">
+                        <div class="task__items">
+                            <div class="task__item__header">
+                                <img src="img/edit-icon.png" alt="" class="task__icon__edit">
+                                <h1 class="task__item__title">Task 2</h1>
+                                <img src="img/icon-arrow-down.png" alt="" class="task__icon__arrow" id="arrow2"
+                                    onclick="showDesc2()">
+                            </div>
+                            <div class="task__desc" id="task__desc_2">
+                                <div class="date_time">
+                                    <input type="date" name="" id="">
+                                    <input type="time" name="" id="">
+                                </div>
+                                <br>
+                                <textarea class="task__item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ex earum maxime doloremque nesciunt exercitationem consectetur fuga esse natus sed labore, sequi est explicabo illo, deleniti ratione!</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__tasks">
+                        <div class="task__items">
+                            <div class="task__item__header">
+                                <img src="img/edit-icon.png" alt="" class="task__icon__edit">
+                                <h1 class="task__item__title">Task 3</h1>
+                                <img src="img/icon-arrow-down.png" alt="" class="task__icon__arrow" id="arrow3"
+                                    onclick="showDesc3()">
+                            </div>
+                            <div class="task__desc" id="task__desc_3">
+                                <div class="date_time">
+                                    <input type="date" name="" id="">
+                                    <input type="time" name="" id="">
+                                </div>
+                                <br>
+                                <textarea class="task__item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ex earum maxime doloremque nesciunt exercitationem consectetur fuga esse natus sed labore, sequi est explicabo illo, deleniti ratione!</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="task__row2">
+                    <div class="card__tasks">
+                        <div class="task__items">
+                            <div class="task__item__header">
+                                <img src="img/edit-icon.png" alt="" class="task__icon__edit">
+                                <h1 class="task__item__title">Task 4</h1>
+                                <img src="img/icon-arrow-down.png" alt="" class="task__icon__arrow" id="arrow4"
+                                    onclick="showDesc4()">
+                            </div>
+                            <div class="task__desc" id="task__desc_4">
+                                <div class="date_time">
+                                    <input type="date" name="" id="">
+                                    <input type="time" name="" id="">
+                                </div>
+                                <br>
+                                <textarea class="task__item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ex earum maxime doloremque nesciunt exercitationem consectetur fuga esse natus sed labore, sequi est explicabo illo, deleniti ratione!</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__tasks">
+                        <div class="task__items">
+                            <div class="task__item__header">
+                                <img src="img/edit-icon.png" alt="" class="task__icon__edit">
+                                <h1 class="task__item__title">Task 5</h1>
+                                <img src="img/icon-arrow-down.png" alt="" class="task__icon__arrow" id="arrow5"
+                                    onclick="showDesc5()">
+                            </div>
+                            <div class="task__desc" id="task__desc_5">
+                                <div class="date_time">
+                                    <input type="date" name="" id="">
+                                    <input type="time" name="" id="">
+                                </div>
+                                <br>
+                                <textarea class="task__item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ex earum maxime doloremque nesciunt exercitationem consectetur fuga esse natus sed labore, sequi est explicabo illo, deleniti ratione!</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__tasks">
+                        <div class="task__items">
+                            <div class="task__item__header">
+                                <img src="img/edit-icon.png" alt="" class="task__icon__edit">
+                                <h1 class="task__item__title">Task 6</h1>
+                                <img src="img/icon-arrow-down.png" alt="" class="task__icon__arrow" id="arrow6"
+                                    onclick="showDesc6()">
+                            </div>
+                            <div class="task__desc" id="task__desc_6">
+                                <div class="date_time">
+                                    <input type="date" name="" id="">
+                                    <input type="time" name="" id="">
+                                </div>
+                                <br>
+                                <textarea class="task__item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ex earum maxime doloremque nesciunt exercitationem consectetur fuga esse natus sed labore, sequi est explicabo illo, deleniti ratione!</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

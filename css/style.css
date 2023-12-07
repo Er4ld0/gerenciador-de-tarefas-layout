@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root {
+    --font: 'Sen', sans-serif;
+    --jet: #6e6e66;
+    --white: #FDFFFF;
+    --madder: #B10F2E;
+    --burnt_sienna: #DE7C5A;
+    --vista_blue: #7699D4;
+}
+
+html,
+body {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--jet);
+    background-color: var(--white);
+    width: 900px;
+    height: 450px;
+}
+
+.container2 {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/*==========Profile Configs==========*/
+
+.card__profile {
+    color: var(--white);
+    background-color: var(--madder);
+    border-style: double;
+    border-color: var(--madder);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    width: 200px;
+    height: 404px;
+    border-radius: 15px;
+}
+
+.profile__header {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--jet);
+    display: flex;
+    align-items: center;
+}
+
+.profile__img {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+
+}
+
+/*==========Profile Infos==========*/
+
+.profile__info {
+    margin: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile__name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile__email,
+.profile__birth {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile__email>h1,
+.profile__birth>h1,
+.profile__gender>h1,
+.profile__phone>h1 {
+    font-size: 17px;
+}
+
+.profile__email>p,
+.profile__birth>p,
+.profile__gender>p,
+.profile__phone>p {
+    font-size: 13px;
+}
+
+/*==========Task Configs==========*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task__row{
+    display: flex;
+    gap: 20px;
+}
+
+/*======================================*/
+
+.task__row1{
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+    height: 200px;
+}
+
+.task__row2{
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+    height: 200px;
+}
+
+.card__tasks {
+    background-color: var(--white);
+
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    color: var(--white);
+    border-radius: 15px;
+
+}
+
+.task__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--jet);
+}
+
+.task__item__header {
+    background-color: var(--madder);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    gap: 30px;
+    border-radius: 10px;
+    border-bottom-style: solid;
+    border-color: var(--jet);
+}
+
+.task__icon__edit {
+    width: 25px;
+}
+
+.task__item__title {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task__item_date {
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input{
+    border-radius: 5px;
+    border-style: solid;
+}
+
+input:first-child{
+    width: 150px;
+    font-size: 11px;
+}
+
+input:last-child{
+    width: 85px;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.date_time{
+    display: flex;
+    gap: 10px;
+    width: 160px;
+}
+
+.task__icon__arrow {
+    width: 13px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.task__icon__arrow:hover {
+    cursor: pointer;
+}
+
+.task__item__desc {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-style: double;
+    border-radius: 15px;
+    width: 170px;
+    height: 63px;
+}
+
+.task__desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.date_time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 170px;
+}
