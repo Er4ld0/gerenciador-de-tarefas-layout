@@ -91,7 +91,7 @@ body {
     gap: 15px;
 }
 
-.info__btn{
+.info__btn {
     color: var(--white);
     font-weight: 500;
     background-color: var(--vista_blue);
@@ -104,19 +104,19 @@ body {
     justify-content: center;
 }
 
-.info__btn:hover{
+.info__btn:hover {
     cursor: pointer;
     background-color: var(--vista_blue_active);
 }
 
-.profile__info > h1{
+.profile__info>h1 {
     font-size: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.info__last__tasks{
+.info__last__tasks {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -125,33 +125,35 @@ body {
     width: 100%;
 }
 
-.task__title{
+.task__title {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
 }
 
-.task__hours{
+.task__hours {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
 }
 
-.task__title > h1, .task__hours > h1{
+.task__title>h1,
+.task__hours>h1 {
     font-size: 17px;
 }
 
-.task__title > p, .task__hours > p{
+.task__title>p,
+.task__hours>p {
     font-size: 10px;
 }
 
-.task__title > p{
+.task__title>p {
     height: 15px;
 }
 
-.task__hours > p{
+.task__hours>p {
     background-color: var(--vista_blue);
     width: 100%;
     height: 15px;
@@ -162,7 +164,7 @@ body {
     border-radius: 5px;
 }
 
-.last__task__row > p:last-child{
+.last__task__row>p:last-child {
     background-color: var(--vista_blue);
     display: flex;
     align-items: center;
@@ -185,21 +187,21 @@ main {
     gap: 15px;
 }
 
-.task__row{
+.task__row {
     display: flex;
     gap: 20px;
 }
 
 /*======================================*/
 
-.task__row1{
+.task__row1 {
     display: flex;
     gap: 20px;
     z-index: 1;
     height: 200px;
 }
 
-.task__row2{
+.task__row2 {
     display: flex;
     gap: 20px;
     z-index: 2;
@@ -240,8 +242,21 @@ main {
     border-radius: 10px;
 }
 
-.task__icon__edit {
-    width: 25px;
+.task__icon__edit,
+.task__icon__arrow {
+    width: 13px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.task__icon__arrow:hover,
+.task__icon__edit:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
 }
 
 .task__item__title {
@@ -261,41 +276,26 @@ main {
     gap: 5px;
 }
 
-input{
+input {
     border-radius: 5px;
     border-style: solid;
 }
 
-input:first-child{
+input:first-child {
     width: 150px;
     font-size: 11px;
 }
 
-input:last-child{
+input:last-child {
     width: 85px;
     font-size: 10px;
     padding-left: 5px;
 }
 
-.date_time{
+.date_time {
     display: flex;
     gap: 10px;
     width: 160px;
-}
-
-.task__icon__edit, .task__icon__arrow {
-    width: 13px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: right;
-}
-
-.task__icon__arrow:hover, .task__icon__edit:hover {
-    cursor: pointer;
-    background-color: var(--white);
-    width: 13px;
-    height: 13px;
-    border-radius: 50px;
 }
 
 .task__item__desc {
@@ -314,7 +314,7 @@ input:last-child{
     flex-direction: column;
 }
 
-.date_time{
+.date_time {
     display: flex;
     align-items: center;
     justify-content: center;
