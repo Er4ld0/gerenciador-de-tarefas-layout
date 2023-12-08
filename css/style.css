@@ -7,17 +7,16 @@
 
 :root {
     --font: 'Sen', sans-serif;
-    --jet: #afafa3;
-    --white: #ffffff;
-    --madder: #B10F2E;
-    --burnt_sienna: #DE7C5A;
-    --vista_blue: #7699D4;
-    --vista_blue_active: #99afd4;
+    --red: #ffb3ba;
+    --orange: #ffdfba;
+    --yellow: #ffffba;
+    --green: #baffc9;
+    --blue: #bae1ff;
+    --blue_active: #cbe8fd;
 }
 
 html,
 body {
-    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,8 +36,8 @@ body {
     gap: 30px;
     border-radius: 15px;
     border-style: solid;
-    border-color: var(--jet);
-    background-color: var(--vista_blue_active);
+    border-color: var(--orange);
+    background-color: var(--red);
     width: 900px;
     height: 450px;
 }
@@ -53,10 +52,8 @@ body {
 /*==========Profile Configs==========*/
 
 .card__profile {
-    color: var(--white);
-    background-color: var(--jet);
-    border-style: double;
-    border-color: var(--vista_blue);
+    color: black;
+    background-color: var(--yellow);
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -67,7 +64,7 @@ body {
 }
 
 .profile__header {
-    background-color: var(--vista_blue);
+    background-color: var(--blue);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -92,9 +89,9 @@ body {
 }
 
 .info__btn {
-    color: var(--white);
+    color: black;
     font-weight: 500;
-    background-color: var(--vista_blue);
+    background-color: var(--blue);
     border-style: none;
     border-radius: 5px;
     width: 175px;
@@ -106,7 +103,7 @@ body {
 
 .info__btn:hover {
     cursor: pointer;
-    background-color: var(--vista_blue_active);
+    background-color: var(--blue_active);
 }
 
 .profile__info>h1 {
@@ -147,6 +144,7 @@ body {
 .task__title>p,
 .task__hours>p {
     font-size: 10px;
+    font-weight: 700;
 }
 
 .task__title>p {
@@ -154,7 +152,7 @@ body {
 }
 
 .task__hours>p {
-    background-color: var(--vista_blue);
+    background-color: var(--blue);
     width: 100%;
     height: 15px;
     text-align: center;
@@ -165,7 +163,7 @@ body {
 }
 
 .last__task__row>p:last-child {
-    background-color: var(--vista_blue);
+    background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,14 +207,12 @@ main {
 }
 
 .card__tasks {
-    background-color: var(--jet);
+    background-color: var(--yellow);
     width: 200px;
     height: fit-content;
     text-align: center;
     color: var(--white);
     border-radius: 15px;
-    border-style: double;
-    border-color: var(--vista_blue);
 }
 
 .task__items {
@@ -227,12 +223,11 @@ main {
     width: 100%;
     gap: 10px;
     border-radius: 15px;
-    border-style: solid;
-    border-color: var(--jet);
+
 }
 
 .task__item__header {
-    background-color: var(--vista_blue);
+    background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
