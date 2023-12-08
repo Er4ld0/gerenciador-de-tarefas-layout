@@ -13,6 +13,7 @@
     --green: #baffc9;
     --blue: #bae1ff;
     --blue_active: #cbe8fd;
+    --brown: rgb(173, 157, 147);
 }
 
 html,
@@ -37,7 +38,7 @@ body {
     border-radius: 15px;
     border-style: solid;
     border-color: var(--orange);
-    background-color: var(--red);
+    background-color: var(--brown);
     width: 900px;
     height: 450px;
 }
@@ -57,7 +58,7 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     width: 200px;
     height: 404px;
     border-radius: 15px;
@@ -66,6 +67,7 @@ body {
 .profile__header {
     background-color: var(--blue);
     border-radius: 15px;
+    border: 2px solid var(--brown);
     display: flex;
     align-items: center;
 }
@@ -215,6 +217,14 @@ main {
     border-radius: 15px;
 }
 
+.card__tasks:nth-child(2){
+    background-color: var(--green);
+}
+
+.card__tasks:last-child{
+    background-color: var(--orange);
+}
+
 .task__items {
     display: flex;
     align-items: center;
@@ -223,7 +233,6 @@ main {
     width: 100%;
     gap: 10px;
     border-radius: 15px;
-
 }
 
 .task__item__header {
@@ -235,6 +244,7 @@ main {
     width: 100%;
     height: 50px;
     border-radius: 10px;
+    border: 2px solid var(--brown);
 }
 
 .task__icon__edit,
