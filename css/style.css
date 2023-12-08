@@ -7,8 +7,8 @@
 
 :root {
     --font: 'Sen', sans-serif;
-    --jet: #6e6e66;
-    --white: #FDFFFF;
+    --jet: #afafa3;
+    --white: #ffffff;
     --madder: #B10F2E;
     --burnt_sienna: #DE7C5A;
     --vista_blue: #7699D4;
@@ -38,7 +38,7 @@ body {
     border-radius: 15px;
     border-style: solid;
     border-color: var(--jet);
-    background-color: var(--white);
+    background-color: var(--vista_blue_active);
     width: 900px;
     height: 450px;
 }
@@ -210,13 +210,13 @@ main {
 
 .card__tasks {
     background-color: var(--jet);
-
     width: 200px;
     height: fit-content;
     text-align: center;
     color: var(--white);
     border-radius: 15px;
-
+    border-style: double;
+    border-color: var(--vista_blue);
 }
 
 .task__items {
