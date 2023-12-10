@@ -1,3 +1,5 @@
+/*===================Configs Gerais===================*/
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +19,8 @@
     --black: #464545;
 }
 
+/*===================Configs do Body===================*/
+
 html,
 body {
     display: flex;
@@ -32,6 +36,8 @@ body {
     gap: 30px;
 }
 
+/*===================Configs do Container===================*/
+
 .container {
     display: flex;
     justify-content: center;
@@ -43,14 +49,14 @@ body {
     height: 450px;
 }
 
-.container2 {
+.card__container {
     margin-top: 22px;
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-/*==========Profile Configs==========*/
+/*===================Configs do Perfil===================*/
 
 .card__profile {
     color: black;
@@ -79,7 +85,7 @@ body {
     height: 80px;
 }
 
-/*==========Profile Infos==========*/
+/*===================Config das Infos do Perfil===================*/
 
 .profile__info {
     margin: 0 10px 10px 10px;
@@ -89,6 +95,8 @@ body {
     flex-direction: column;
     gap: 15px;
 }
+
+/*===================Configs do Botão de Adicionar Tasks===================*/
 
 .info__btn {
     color: black;
@@ -114,6 +122,8 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/*===================Configs das Últimas Tasks Adicionadas===================*/
 
 .info__last__tasks {
     display: flex;
@@ -180,7 +190,7 @@ body {
     font-weight: 600;
 }
 
-/*==========Task Configs==========*/
+/*===================Configs Gerais da Main===================*/
 
 main {
     display: flex;
@@ -188,12 +198,14 @@ main {
     gap: 15px;
 }
 
+/*===================Configs do Card das Tasks===================*/
+
 .task__row {
     display: flex;
     gap: 20px;
 }
 
-/*======================================*/
+/*===================Configs do Display do Buscador===================*/
 
 .card__display {
     display: flex;
@@ -223,7 +235,7 @@ main {
     cursor: pointer;
 }
 
-/*======================================*/
+/*===================Configs das Tasks===================*/
 
 .card__task__row {
     display: flex;
@@ -272,6 +284,8 @@ main {
     border-bottom: 2px solid var(--brown);
 }
 
+/*===================Botões do Header===================*/
+
 .task__icon__edit,
 .task__icon__delete {
     width: 13px;
@@ -288,6 +302,8 @@ main {
     height: 13px;
     border-radius: 50px;
 }
+
+/*===================Itens da Task===================*/
 
 .task__item__title {
     width: 100px;
