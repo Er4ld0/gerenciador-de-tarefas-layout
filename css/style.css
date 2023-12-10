@@ -194,14 +194,37 @@ main {
 
 /*======================================*/
 
-.task__row1 {
+.card__display {
     display: flex;
+    align-items: first baseline;
+    justify-content: right;
     gap: 20px;
-    z-index: 1;
     height: 200px;
 }
 
-.task__row2 {
+.card__display__search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.display__search__btn{
+    height: 25px;
+}
+
+.task__icon__search{
+    width: 20px;
+}
+
+.task__icon__search:hover{
+    cursor: pointer;
+    background-color: white; 
+    border-radius: 50px;
+}
+
+/*======================================*/
+
+.card__task__row {
     display: flex;
     gap: 20px;
     z-index: 2;
@@ -217,11 +240,11 @@ main {
     border-radius: 15px;
 }
 
-.card__tasks:nth-child(2){
+.card__tasks:nth-child(2) {
     background-color: var(--green);
 }
 
-.card__tasks:last-child{
+.card__tasks:last-child {
     background-color: var(--orange);
 }
 
