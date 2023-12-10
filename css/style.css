@@ -273,17 +273,17 @@ main {
 }
 
 .task__icon__edit,
-.task__icon__arrow {
+.task__icon__delete {
     width: 13px;
     display: flex;
     align-items: flex-end;
     justify-content: right;
 }
 
-.task__icon__arrow:hover,
+.task__icon__delete:hover,
 .task__icon__edit:hover {
     cursor: pointer;
-    background-color: var(--white);
+    background-color: white;
     width: 13px;
     height: 13px;
     border-radius: 50px;
