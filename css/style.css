@@ -114,6 +114,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 5px;
+    font-weight: 700;
 }
 
 .info__btn:hover {
@@ -232,6 +235,11 @@ main {
     padding: 0 5px 0 10px;
 }
 
+.task__icon__search:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+
 .task__icon__search {
     width: 20px;
 }
@@ -294,7 +302,8 @@ main {
 /*===================Botões do Header===================*/
 
 .task__icon__edit,
-.task__icon__delete {
+.task__icon__delete,
+.task__icon__add {
     width: 13px;
     display: flex;
     align-items: flex-end;
@@ -307,7 +316,7 @@ main {
     background-color: white;
     width: 13px;
     height: 13px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 /*===================Itens da Task===================*/
