@@ -56,7 +56,7 @@ body {
     gap: 30px;
 }
 
-/*===================Configs do Perfil===================*/
+/*===================Configs do Card do Perfil===================*/
 
 .card__profile {
     color: black;
@@ -83,6 +83,11 @@ body {
     margin: 10px;
     width: 80px;
     height: 80px;
+}
+
+.profile__name {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /*===================Config das Infos do Perfil===================*/
@@ -185,11 +190,6 @@ body {
     border-radius: 5px;
 }
 
-.profile__name {
-    font-size: 20px;
-    font-weight: 600;
-}
-
 /*===================Configs Gerais da Main===================*/
 
 main {
@@ -261,6 +261,8 @@ main {
 .card__tasks:last-child {
     background-color: var(--orange);
 }
+
+/*===================Card das Tasks===================*/
 
 .task__items {
     display: flex;
